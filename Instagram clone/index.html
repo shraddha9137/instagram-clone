@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone</title>
+    <link rel="icon" type="image/png" href="icons/insta-icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="instagram_icon">
+    <img src="icons/insta-icon.png" alt="">
+    <span>Instagram</span></div>
+<div class="right-top-bar">
+    <div class="story-nav">
+        <div class="story">
+            <div class="story-img" style="background-image: url('icons/img6 (2).jpg');">
+                <span class="plus-icon">+</span>
+            </div>
+            <span>My Story</span>
+        </div>
+        
+        <div class="story">
+            <div class="story-img" style="background-image: url('icons/img4 (2).jpg');"></div>
+            <span>User 1</span>
+        </div>
+        <div class="story">
+            <div class="story-img" style="background-image: url('icons/img5 (2).jpg');"></div>
+            <span>User 2</span>
+        </div>
+        <div class="story">
+            <div class="story-img" style="background-image: url('icons/img3 (2).jpg ');"></div>
+            <span>User 3</span>
+        </div>
+        <div class="story">
+            <div class="story-img" style="background-image: url('icons/img2.jpg');"></div>
+            <span>User 4</span>
+        </div>
+        <div class="story">
+            <div class="story-img" style="background-image: url('icons/img4.jpg');"></div>
+            <span>User 5</span>
+        </div>
+    </div>
+</div>
+  
+<div class="left-bar">
+    <div class="item" onclick="navigateTo('index.html')">
+        <img src="icons/Home.png" alt="">
+        <span>Home</span>
+    </div>
+    <div class="item"  onclick="navigateTo('search.html')">
+        <img src="icons/search icon.png" alt="">
+        <span>Search</span>
+    </div>
+    <div class="item"  onclick="navigateTo('explore.html')">
+        <img src="icons/explore.png" alt="">
+        <span>Explore</span>
+    </div>
+    <div class="item" onclick="navigateTo('reels.html')" >
+        <img src="icons/reels.png" alt="">
+        <span>Reels</span>
+    </div>
+    <div class="item" onclick="navigateTo('messages.html')">
+        <img src="icons/msg icon.png" alt="">
+        <span>Messages</span>
+    </div>
+    <div class="item" onclick="navigateTo('notifications.html')">
+        <img src="icons/Like.png" alt="">
+        <span>Notifications</span>
+    </div>
+    <div class="item"  onclick="navigateTo('profile.html')">
+        <img src="icons/user icon.png" alt="">
+        <span>Profile</span>
+    </div>
+    <div class="item" onclick="navigateTo('threads.html')" >
+        <img src="icons/thread.png" alt="">
+        <span>Threads</span>
+    </div>
+    <div class="item" onclick="navigateTo('menu.html')">
+        <img src="icons/menu bar icon.png" alt="">
+        <span>Menu</span>
+    </div>
+</div>
+<div class="instagram-posts">
+    
+    <div class="post">
+        <div class="post-header">
+            <img src="icons/img4 (2).jpg" alt="User Profile" class="profile-pic">
+            <span class="username">username1</span>
+            <span class="setting"> <img src="icons/setting dots.png" alt=""></span>
+        </div>
+        <img src="icons/image1.png" alt="Post Image" class="post-image">
+        <div class="post-actions">
+            <span class="like-btn"><img src="icons/Like.png" alt=""></span>
+            <span class="comment-btn"><img src="icons/message.png" alt=""></span>
+            <span class="share-btn"><img src="icons/share.png" alt=""></span>
+            <span class="saved-btn"><img src="icons/savedicon.png" alt=""></span>
+        </div>
+        <div class="post-caption">
+            <strong>username1</strong> Exploring nature 🍃
+        </div>
+    </div>
+
+    <div class="post">
+        <div class="post-header">
+            <img src="icons/img5 (2).jpg" alt="User Profile" class="profile-pic">
+            <span class="username">username2</span>
+            <span class="setting"><img src="icons/setting dots.png" alt=""></span>
+        </div>
+        <img src="icons/sunset.jpg" alt="Post Image" class="post-image">
+        <div class="post-actions">
+            <span class="like-btn"><img src="icons/Like.png" alt=""></span>
+            <span class="comment-btn"><img src="icons/message.png" alt=""></span>
+            <span class="share-btn"><img src="icons/share.png" alt=""></span>
+            <span class="saved-btn"> <img src="icons/savedicon.png" alt=""></span>
+        </div>
+        <div class="post-caption">
+            <strong>username2</strong> Beautiful sunset view! 🌅
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

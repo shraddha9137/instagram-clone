@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore - Instagram Clone</title>
+    <link rel="icon" type="image/png" href="icons/insta-icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="instagram_icon">
+        <img src="icons/insta-icon.png" alt="">
+        <span>Instagram</span>
+    </div>
+
+    <div class="left-bar">
+        <div class="item" onclick="navigateTo('index.html')">
+            <img src="icons/Home.png" alt="">
+            <span>Home</span>
+        </div>
+        <div class="item"  onclick="navigateTo('search.html')">
+            <img src="icons/search icon.png" alt="">
+            <span>Search</span>
+        </div>
+        <div class="item"  onclick="navigateTo('explore.html')">
+            <img src="icons/explore.png" alt="">
+            <span>Explore</span>
+        </div>
+        <div class="item" onclick="navigateTo('reels.html')" >
+            <img src="icons/reels.png" alt="">
+            <span>Reels</span>
+        </div>
+        <div class="item" onclick="navigateTo('messages.html')">
+            <img src="icons/msg icon.png" alt="">
+            <span>Messages</span>
+        </div>
+        <div class="item" onclick="navigateTo('notifications.html')">
+            <img src="icons/Like.png" alt="">
+            <span>Notifications</span>
+        </div>
+        <div class="item"  onclick="navigateTo('profile.html')">
+            <img src="icons/user icon.png" alt="">
+            <span>Profile</span>
+        </div>
+        <div class="item" onclick="navigateTo('threads.html')" >
+            <img src="icons/thread.png" alt="">
+            <span>Threads</span>
+        </div>
+        <div class="item" onclick="navigateTo('menu.html')">
+            <img src="icons/menu bar icon.png" alt="">
+            <span>Menu</span>
+        </div>
+    </div>
+  
+
+    <div class="explore-grid">
+        <div class="post"><img src="https://picsum.photos/400/400?random=1" alt="Explore Image 1"></div>
+        <div class="post"><img src="https://picsum.photos/400/400?random=2" alt="Explore Image 2"></div>
+        <div class="post"><img src="https://picsum.photos/400/400?random=3" alt="Explore Image 3"></div>
+        <div class="post"><img src="https://picsum.photos/400/400?random=4" alt="Explore Image 4"></div>
+        <div class="post"><img src="https://picsum.photos/400/400?random=5" alt="Explore Image 5"></div>
+        <div class="post"><img src="https://picsum.photos/400/400?random=6" alt="Explore Image 6"></div>
+    </div>
+    
+    
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+     
+    </script>
+    
+    <style>
+
+.instagram_icon {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 60px; 
+    background-color: white;
+    border-bottom: 1px solid  rgba(102, 86, 86, 0.1);
+    box-shadow: 0px 2px 10px rgba(86, 75, 75, 0.1);
+    z-index: 1000; 
+}
+
+
+.instagram_icon img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.instagram_icon span {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+    color: black;
+}
+
+
+.left-bar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 260px;
+    height: 100vh;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 2px 10px rgba(65, 61, 61, 0.1);
+}
+
+.left-bar div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    border-radius: 8px;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+.left-bar div:hover {
+    background-color: #f0f0f0;
+}
+
+.left-bar img {
+    width: 24px;
+    height: 24px;
+    margin: 8px;
+}
+
+.left-bar span {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+.item1 img{
+    width: 45px;
+    height: 45px;
+}
+.explore-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    margin-left: 280px;
+    margin-top: 80px;
+}
+.post {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.post img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px; 
+}
+    </style>
+</body>
+</html>
